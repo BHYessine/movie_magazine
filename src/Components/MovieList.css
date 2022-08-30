@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap");
+
+.container {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+  background-image: url("./background.jpg");
+  background-color: #000000;
+  height: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  background-color: rgb(0, 0, 0, 0.8);
+  font-family: "Fira Sans", sans-serif;
+  min-height: 100vh;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  background-color: #272727;
+  border-bottom: 2px solid rgb(236, 56, 56);
+}
+
+nav .web-title {
+  color: rgb(236, 56, 56);
+  font-family: "DynaPuff", cursive;
+  font-size: 28px;
+}
+
+nav .filter {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+Form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-control,
+.form-select {
+  width: 250px;
+}
+.mb-3 {
+  margin-bottom: 0 !important;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.card-movie {
+  position: relative;
+  text-decoration: none;
+  border: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+}
+.card-img-overlay {
+  background-color: rgb(0, 0, 0, 0.4);
+  border: 2px solid rgb(236, 56, 56);
+}
+.card-text {
+  text-align: justify;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 10px;
+  margin-bottom: 10px;
+}
+.rating svg {
+  color: gold;
+  font-size: 24px;
+}
+.card-img {
+  height: 100%;
+}
+.watch {
+  display: none;
+}
+
+.watch svg {
+  width: 90px;
+  height: 90px;
+}
+
+.empty-list {
+  color: #fff;
+  font-size: 50px;
+}
+
+.card .btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-bottom: 5px;
+}
+
+.see-more {
+  color: rgb(236, 56, 56);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-movie:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    gap: 40px;
+  }
+  nav .web-title {
+    font-size: 22px;
+  }
+
+  nav .filter {
+    gap: 20px;
+    font-weight: 400;
+    padding-left: 30px;
+  }
+
+  .form-control,
+  .form-select {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .movie-list {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 350px;
+    height: 200px;
+  }
+  .card-img-overlay {
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 10px;
+  }
+  .card-text,
+  .card .btn {
+    font-size: 11px;
+  }
+
+  .rating svg {
+    font-size: 14px;
+  }
+
+  .empty-list {
+    color: #fff;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    gap: 20px;
+  }
+  nav .web-title {
+    font-size: 15px;
+  }
+
+  nav .filter {
+    gap: 10px;
+
+    padding-left: 0px;
+  }
+  .input-group {
+    width: 100px;
+  }
+
+  .form-control,
+  .form-select {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .movie-list {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 350px;
+    height: 180px;
+  }
+  .card-img-overlay {
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 10px;
+  }
+  .card-text,
+  .card .btn {
+    font-size: 11px;
+  }
+
+  .rating svg {
+    font-size: 14px;
+  }
+
+  .empty-list {
+    color: #fff;
+    font-size: 30px;
+  }
+}
